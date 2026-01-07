@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página personal de Pablo Expósito Lozano, estudiante de bachillerato, creativo y apasionado por el deporte, la programación y la comunicación." />
+    <title>Pablo Expósito Lozano</title>
+
+    <style>
+        :root {
+            --primary: #0077c7;
+            --primary-dark: #005fa1;
+            --accent: #00b7ff;
+            --bg: #e9eef3;
+            --text: #1f1f1f;
+            --white: #ffffff;
+            --radius: 16px;
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            --transition: 0.35s ease;
+        }
+
+        /* ------ GLOBAL STYLES ------ */
+        body {
+            margin: 0;
+            font-family: "Poppins", "Segoe UI", Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            overflow-x: hidden;
+        }
+
+        /* ------ HEADER ------ */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 4rem 1rem;
+            text-align: center;
+            position: relative;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 {
+            font-size: 3.2rem;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+
+        /* ------ MAIN CONTAINER ------ */
+        main {
+            max-width: 950px;
+            margin: 3.5rem auto;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        /* ------ TITLES ------ */
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            position: relative;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 55px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 4px;
+            transition: width var(--transition);
+        }
+
+        section:hover h2::after {
+            width: 100px;
+        }
+
+        /* ------ LIST ------ */
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+            font-size: 1.05rem;
+        }
+
+        /* ------ BUTTONS ------ */
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 1.7rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: var(--white);
+            border-radius: var(--radius);
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ------ TABLE ------ */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.8rem;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 1rem;
+            font-size: 1.15rem;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+
+        td {
+            background: #ffffff;
+            padding: 1rem;
+            font-size: 1.05rem;
+            text-align: center;
+        }
+
+        tr:nth-child(even) td {
+            background: #f2f8ff;
+        }
+
+        td img {
+            max-width: 140px;
+            border-radius: var(--radius);
+            transition: var(--transition);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        td img:hover {
+            transform: scale(1.07) rotate(1deg);
+        }
+
+        /* ------ FOOTER ------ */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            font-size: 1.15rem;
+            box-shadow: var(--shadow);
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Pablo Expósito Lozano</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Sobre mí</h2>
+        <p>
+            Me llamo Pablo Expósito, soy un estudiante de segundo de bachillerato del instituto IES Huarte de San Juan. 
+            Me considero una persona creativa, resiliente, perseverante, honesta, flexible y sociable, con la que puedes hablar de casi todo.
+        </p>
+    </section>
+
+    <section>
+        <h2>Mis aficiones</h2>
+        <ul>
+            <li>Quedar con mis amigos</li>
+            <li>Ver y jugar fútbol</li>
+            <li>Jugar a videojuegos y ver series y películas</li>
+            <li>Interés por el mundo de la programación</li>
+            <li>Hacer deporte</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Mis gustos futbolísticos</h2>
+        <table>
+            <tr>
+                <th>Imagen</th>
+                <th>Categoría</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td><img src="https://imagenes.elpais.com/resizer/v2/https%3A%2F%2Fep01.epimg.net%2Fdeportes%2Fimagenes%2F2018%2F05%2F26%2Factualidad%2F1527368774_988542_1527409323_noticia_fotograma.jpg?auth=fc35eed6e7fae57d57e8e2cb014e0c942770751874393addd67997699e394da6&width=980&height=551&smart=true" alt="Cristiano Ronaldo"></td>
+                <td>Jugador favorito</td>
+                <td>Cristiano Ronaldo</td>
+            </tr>
+            <tr>
+                <td><img src="https://i.pinimg.com/736x/dd/0c/11/dd0c11f32848456764d1912d9e5bbe00.jpg" alt="Iker Casillas"></td>
+                <td>Mi referencia en el fútbol</td>
+                <td>Iker Casillas</td>
+            </tr>
+            <tr>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSChjx1Oaon-q2HcyV641VVXWrQqQ9XiaVL2w&s" alt="Real Madrid"></td>
+                <td>Mi equipo favorito</td>
+                <td>Real Madrid</td>
+            </tr>
+            <tr>
+                <td><img src="https://tienda.linaresdeportivo.es/cdn/shop/files/1500x1500-destacado-home-entreno_fab2bcab-4ab4-49d9-8d15-ec3630a80c0c.jpg?v=1753172800&width=1500" alt="Linares Deportivo"></td>
+                <td>Equipo de mi ciudad</td>
+                <td>Linares Deportivo</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Mis series favoritas</h2>
+        <table>
+            <tr>
+                <th>Imagen</th>
+                <th>Nombre<br> (enlace a pagina)</th>
+                <th>Breve resumen</th>
+            </tr>
+            <tr>
+      <td><img src="https://media.themoviedb.org/t/p/w500/9PgvLKv0vSnJnCAhy3EivGTtHzF.jpg"></td>
+                <td><a href="https://www.netflix.com/es/title/81040344" target="_blank" rel="noopener noreferrer">El Juego del Calamar</a></td>
+                <td>"El Juego del Calamar" es una serie sobre 456 personas endeudadas que compiten en una serie de juegos infantiles mortales por un premio millonario. Los participantes deben jugar seis juegos en seis días, y quienes pierdan, mueren.</td>
+            </tr>
+            <tr>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT80QKWId3MOYgp_9kMGoA72xs8TnG-Vyvimg&s"></td>
+                <td><a href="https://www.netflix.com/es/title/81002370" target="_blank" rel="noopener noreferrer">Cobra Kai</a></td>
+                <td>Cobra Kai es una serie que retoma la historia 34 años después de la película The Karate Kid. Johnny Lawrence, quien pasa por un mal momento personal, reabre el dojo Cobra Kai y comienza a entrenar a un joven acosado llamado Miguel Díaz. Esta decisión reaviva su rivalidad con Daniel LaRusso, quien también se convierte en sensei para entrenar a estudiantes en el dojo Miyagi-Do. La serie explora la evolución de los personajes, las rivalidades entre sus dojos y cómo la filosofía del "no mercy" de Cobra Kai choca con los valores del Miyagi-Do.</td>
+            </tr>
+            <tr>
+                <td><img src="https://lh3.googleusercontent.com/pBmlpI5vPFJ106Zev0-q_IFCQo_n8wgV9xh13CQrTvD3AKxXW_SVQ5WQmqhFW-_8QZso0LqBR9XyUfT167GL19uHwsjcNbrewwKl2oTlhP5M5bd62PxotjgsQ0xV8kbhSxgFsuxCzw=w2400"></td>
+                <td><a href="https://www.netflix.com/es/title/80200575" target="_blank" rel="noopener noreferrer">Alice in Borderland</a></td>
+                <td>Alice in Borderland narra la historia de Arisu y sus amigos, quienes son transportados a una versión desierta de Tokio donde deben participar en juegos mortales para sobrevivir. Los juegos, que van desde pruebas físicas hasta de inteligencia y traición, se rigen por cartas de póker y otorgan visas para extender su supervivencia.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Mi blog</h2>
+        <a class="btn" href="https://fueradejuego1410.blogspot.com/" target="_blank">Ir al blog</a>
+    </section>
+
+    <section>
+        <h2>Redes Sociales</h2>
+        <a class="btn" href="https://www.instagram.com/pablo_exposito08?igsh=MTJ1Y3RtcHFlMGM1Zw==" target="_blank">Instagram</a>
+        <br><br>
+        <a class="btn" href="https://www.tiktok.com/@pablo_exposito08?_r=1&_t=ZN-91aUniHLYpC" target="_blank">TikTok</a>
+    </section>
+</main>
+
+<footer>
+    © 2025 Pablo Expósito Lozano
+</footer>
+
+</body>
+</html>
